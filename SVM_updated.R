@@ -141,8 +141,8 @@ RunSVM <- function(matrix = matrix, coordinates = coordinates, labels = labels, 
 }
 
 data_list <- load_and_process_data(data_type = "DLPFC", 
-                                   gene_list_path = "~/spatial_cluster_evaluation/manuscript_spatial_transcriptomics_cluster_evaluation_2024/DLPFCGeneList.RDS", 
-                                   data_path = "~/spatial_cluster_evaluation/manuscript_spatial_transcriptomics_cluster_evaluation_2024/SpatialSeurats.RDS")
+                                   gene_list_path = "DLPFCGeneList.RDS", 
+                                   data_path = "SpatialSeurats.RDS")
 
 SVM <- RunSVM(matrix = data_list$matrix, 
               coordinates = data_list$coordinates, 
